@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polymethyl Methacrylate (PMMA) Project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Modern Chemistry Project: Polymethyl Methacrylate (PMMA) Interactive Website">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.4/3Dmol-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-brand">PMMA Project</span>
+      <button class="nav-toggle" aria-label="Open Menu">&#9776;</button>
+      <ul id="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#toc">Contents</a></li>
+        <li><a href="#introduction">Intro</a></li>
+        <li><a href="#mono-info">Monomer</a></li>
+        <li><a href="#3dviewer">3D</a></li>
+        <li><a href="#tacticity">Tacticity</a></li>
+        <li><a href="#props">Properties</a></li>
+        <li><a href="#apps">Applications</a></li>
+        <li><a href="#env">Environment</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>Polymethyl Methacrylate (PMMA)</h1>
+      <h2 class="subtitle">Acrylic Polymer: The Transparent Engineering Marvel</h2>
+      <p class="intro-text">
+        PMMA, also known as acrylic or plexiglass, is a versatile, lightweight and optically clear polymer used across industries—from medical implants to displays. Its unique combination of clarity, strength, and biocompatibility makes it crucial in materials science and chemical engineering.
+      </p>
+      <div class="quick-highlight">
+        <span>• Outstanding transparency</span>
+        <span>• Weather & UV resistance</span>
+        <span>• Key material for innovation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation (Table of Contents) -->
+  <section id="toc" class="toc-section">
+    <h2>Table of Contents</h2>
+    <div class="toc-cards">
+      <a href="#introduction" class="toc-card">Introduction</a>
+      <a href="#history" class="toc-card">History</a>
+      <a href="#mono-info" class="toc-card">Monomer Info</a>
+      <a href="#chem-structure" class="toc-card">Chemical Structure</a>
+      <a href="#3dviewer" class="toc-card">3D Viewer</a>
+      <a href="#tacticity" class="toc-card">Tacticity</a>
+      <a href="#polymerization" class="toc-card">Polymerization</a>
+      <a href="#poly-methods" class="toc-card">Polymerization Methods</a>
+      <a href="#chamber" class="toc-card">Reaction Chamber</a>
+      <a href="#mol-structure" class="toc-card">Molecular Structure</a>
+      <a href="#props" class="toc-card">Properties</a>
+      <a href="#processing" class="toc-card">Processing</a>
+      <a href="#production" class="toc-card">Industrial Production</a>
+      <a href="#plant-flow" class="toc-card">Plant Flow Diagram</a>
+      <a href="#india" class="toc-card">PMMA in India</a>
+      <a href="#stress-strain" class="toc-card">Stress-Strain Curve</a>
+      <a href="#living-hinge" class="toc-card">Living Hinge</a>
+      <a href="#advantages" class="toc-card">Advantages</a>
+      <a href="#limitations" class="toc-card">Limitations</a>
+      <a href="#comparisons" class="toc-card">Comparisons</a>
+      <a href="#apps" class="toc-card">Applications</a>
+      <a href="#circular" class="toc-card">Circular Economy</a>
+      <a href="#chemical-recycle" class="toc-card">Chemical Recycling</a>
+      <a href="#bio-based" class="toc-card">Bio-based PMMA</a>
+      <a href="#env" class="toc-card">Environmental Impact</a>
+      <a href="#future" class="toc-card">Future Developments</a>
+      <a href="#references" class="toc-card">References</a>
+    </div>
+  </section>
+
+  <!-- Introduction -->
+  <section id="introduction" class="section">
+    <h2>Introduction</h2>
+    <div class="section-grid">
+      <div class="card">
+        <h3>What is a Polymer?</h3>
+        <p>
+          Polymers are large molecules made by joining many smaller units (monomers) in a chain or network. They are the building blocks of plastics, rubbers and fibers.
+        </p>
+      </div>
+      <div class="card">
+        <h3>What is PMMA?</h3>
+        <p>
+          Polymethyl methacrylate (PMMA) is a synthetic polymer made from methyl methacrylate monomer. It is renowned for its optical clarity, strength, and resistance to UV light and weathering.
+        </p>
+      </div>
+      <div class="card">
+        <h3>The Importance of PMMA</h3>
+        <p>
+          PMMA's exceptional properties make it an essential material for medical devices, automotive lighting, construction, and many advanced engineering applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- History -->
+  <section id="history" class="section">
+    <h2>History</h2>
+    <div class="timeline">
+      <div class="event">
+        <span class="date">1928</span>
+        <div>
+          <strong>Discovery of PMMA</strong><br>
+          Otto Röhm and colleagues synthesize and patent the first acrylic glass.
+        </div>
+      </div>
+      <div class="event">
+        <span class="date">1933</span>
+        <div>
+          <strong>Commercialization</strong><br>
+          PMMA introduced as "Plexiglas" by Röhm & Haas. Shortly after, ICI (UK) releases "Perspex".
+        </div>
+      </div>
+      <div class="event">
+        <span class="date">WWII</span>
+        <div>
+          <strong>Industrial Use</strong><br>
+          PMMA used for aircraft canopies and submarine periscopes.
+        </div>
+      </div>
+      <div class="event">
+        <span class="date">Present</span>
+        <div>
+          <strong>Widespread Use</strong><br>
+          Key material in lenses, screens, lights, & biomedicine.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monomer Information -->
+  <section id="mono-info" class="section">
+    <h2>Monomer Information: Methyl Methacrylate (MMA)</h2>
+    <div class="grid-two">
+      <div>
+        <ul>
+          <li><strong>Chemical Name:</strong> Methyl Methacrylate</li>
+          <li><strong>Chemical Formula:</strong> C<sub>5</sub>H<sub>8</sub>O<sub>2</sub></li>
+          <li><strong>Molar Mass:</strong> 100.12 g/mol</li>
+          <li><strong>Boiling Point:</strong> 101°C</li>
+        </ul>
+      </div>
+      <div>
+        <svg width="150" height="90" viewBox="0 0 150 90">
+          <ellipse cx="40" cy="45" rx="10" ry="10" fill="#cd5c5c"/>
+          <ellipse cx="90" cy="45" rx="10" ry="10" fill="#f4a460"/>
+          <ellipse cx="120" cy="60" rx="10" ry="10" fill="#4682b4"/>
+          <rect x="52" y="42" width="26" height="6" fill="#999"/>
+          <!-- Labels or more detailed structure here -->
+          Sorry, your browser does not support inline SVG.
+        </svg>
+        <small>Methyl Methacrylate: Simplified structure</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chemical Structure of PMMA -->
+  <section id="chem-structure" class="section">
+    <h2>Chemical Structure of PMMA</h2>
+    <div class="section-grid">
+      <div class="card">
+        <h3>Repeating Unit</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Polymethylmethacrylate-structure.svg" alt="Repeating unit of PMMA" style="width:150px">
+      </div>
+      <div class="card">
+        <h3>Polymer Chain</h3>
+        <svg width="300" height="60" viewBox="0 0 300 60" class="polymer-chain-diagram">
+          <rect x="10" y="25" width="40" height="10" fill="#4cafee"/>
+          <rect x="60" y="25" width="40" height="10" fill="#4cafee"/>
+          <rect x="110" y="25" width="40" height="10" fill="#4cafee"/>
+          <rect x="160" y="25" width="40" height="10" fill="#4cafee"/>
+          <rect x="210" y="25" width="40" height="10" fill="#4cafee"/>
+          <circle cx="55" cy="30" r="3" fill="#666"/>
+          <circle cx="105" cy="30" r="3" fill="#666"/>
+          <circle cx="155" cy="30" r="3" fill="#666"/>
+          <circle cx="205" cy="30" r="3" fill="#666"/>
+          <text x="10" y="20" font-size="12">Repeating units</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Polymer Structure Viewer -->
+  <section id="3dviewer" class="section">
+    <h2>3D Polymer Structure Viewer</h2>
+    <div id="pmma-3d" style="width: 350px; height: 300px; margin:auto;"></div>
+    <div class="viewer-controls">
+      <button onclick="zoom(-0.5)">Zoom In</button>
+      <button onclick="zoom(0.5)">Zoom Out</button>
+      <button onclick="resetView()">Reset View</button>
+    </div>
+  </section>
+
+  <!-- Tacticity Viewer -->
+  <section id="tacticity" class="section">
+    <h2>Interactive Tacticity Viewer</h2>
+    <div class="tacticity-buttons">
+      <button data-type="isotactic" class="active">Isotactic</button>
+      <button data-type="syndiotactic">Syndiotactic</button>
+      <button data-type="atactic">Atactic</button>
+    </div>
+    <svg id="tacticity-svg" width="400" height="100"></svg>
+    <p class="tacticity-desc" id="tacticity-desc">
+      Isotactic: All side groups on the same side of the polymer backbone.
+    </p>
+  </section>
+
+  <!-- Polymerization Reaction -->
+  <section id="polymerization" class="section">
+    <h2>Polymerization Reaction</h2>
+    <div class="section-grid">
+      <div>
+        <h3>Reaction Equation</h3>
+        <img src="https://i.imgur.com/lsVjK3O.png" style="max-width:200px" alt="Polymerization equation">
+        <p>
+          <strong>Initiator:</strong> Benzoyl peroxide (C<sub>14</sub>H<sub>10</sub>O<sub>4</sub>)<br>
+          <strong>Mechanism:</strong> Free radical polymerization—initiation, propagation, termination.
+        </p>
+      </div>
+      <div>
+        <h3>Mechanism Diagram</h3>
+        <img src="https://i.imgur.com/j7sG7fv.png" style="max-width:230px" alt="Polymerization mechanism diagram">
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of Polymerization Methods -->
+  <section id="poly-methods" class="section">
+    <h2>Types of Polymerization Methods</h2>
+    <div class="section-grid">
+      <div class="card"><h3>Bulk</h3><p>High purity, no solvents.</p></div>
+      <div class="card"><h3>Suspension</h3><p>Monomer dispersed in water as droplets.</p></div>
+      <div class="card"><h3>Solution</h3><p>Polymer forms in a solvent.</p></div>
+      <div class="card"><h3>Emulsion</h3><p>Micelle-based using surfactants.</p></div>
+    </div>
+  </section>
+
+  <!-- Reaction Chamber Simulation -->
+  <section id="chamber" class="section">
+    <h2>Reaction Chamber Simulation</h2>
+    <div class="reactor-simulation">
+      <canvas id="reactor-canvas" width="320" height="180"></canvas>
+      <button onclick="startReactor()">Run Simulation</button>
+      <p style="font-size: 0.9em;">(Watch polymer chains grow inside the virtual reactor!)</p>
+    </div>
+  </section>
+
+  <!-- Molecular Structure and Arrangement -->
+  <section id="mol-structure" class="section">
+    <h2>Molecular Structure and Arrangement</h2>
+    <div class="section-grid">
+      <div class="card">
+        <h3>Linear Chains</h3>
+        <p>PMMA features long, flexible chains with linear structure.</p>
+      </div>
+      <div class="card">
+        <h3>Molecular Weight</h3>
+        <p>PMMA typically ranges: 50,000–500,000 g/mol. Higher weight improves toughness.</p>
+      </div>
+      <div class="card">
+        <h3>Chain Behavior</h3>
+        <p>Above glass transition, chains move freely. Below, PMMA is rigid and brittle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Physical Properties -->
+  <section id="props" class="section">
+    <h2>Physical Properties</h2>
+    <div class="property-cards">
+      <div class="property-card">
+        <h3>Density</h3>
+        <p>1.17–1.20 g/cm³</p>
+      </div>
+      <div class="property-card">
+        <h3>Optical Transparency</h3>
+        <p>92% light transmission</p>
+      </div>
+      <div class="property-card">
+        <h3>Glass Transition Temp.</h3>
+        <p>105°C–120°C</p>
+      </div>
+      <div class="property-card">
+        <h3>Thermal Stability</h3>
+        <p>Decomposes above 200°C</p>
+      </div>
+      <div class="property-card">
+        <h3>Electrical Insulation</h3>
+        <p>Excellent dielectric protector</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mechanical Properties -->
+  <section class="section">
+    <h2>Mechanical Properties</h2>
+    <div class="property-cards">
+      <div class="property-card">
+        <h3>Strength</h3>
+        <p>Tensile: ~60 MPa</p>
+      </div>
+      <div class="property-card">
+        <h3>Hardness</h3>
+        <p>Rockwell M 90–100</p>
+      </div>
+      <div class="property-card">
+        <h3>Brittleness</h3>
+        <p>Brittle compared to polycarbonate</p>
+      </div>
+      <div class="property-card">
+        <h3>Impact Resistance</h3>
+        <p>Good, but lower than PC</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thermal Properties -->
+  <section class="section">
+    <h2>Thermal Properties</h2>
+    <div class="property-cards">
+      <div class="property-card">
+        <h3>Glass Transition Temp.</h3>
+        <p>105–120°C</p>
+      </div>
+      <div class="property-card">
+        <h3>Heat Resistance</h3>
+        <p>Short-term: up to 150°C</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chemical Properties -->
+  <section class="section">
+    <h2>Chemical Properties</h2>
+    <div class="property-cards">
+      <div class="property-card">
+        <h3>Chemical Resistance</h3>
+        <p>Resists dilute acids, bases, salts</p>
+      </div>
+      <div class="property-card">
+        <h3>Environmental Stability</h3>
+        <p>Excellent UV & weathering resistance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processing Methods -->
+  <section id="processing" class="section">
+    <h2>Processing Methods</h2>
+    <div class="section-grid">
+      <div class="card"><h3>Injection Molding</h3></div>
+      <div class="card"><h3>Extrusion</h3></div>
+      <div class="card"><h3>Casting</h3></div>
+    </div>
+  </section>
+
+  <!-- Industrial Production Process -->
+  <section id="production" class="section">
+    <h2>Industrial Production of PMMA</h2>
+    <p>
+      In a typical process, methyl methacrylate monomer is polymerized in large reactors then shaped via casting, extrusion, or molding. Additives for UV stability and flow may be blended in.
+    </p>
+  </section>
+
+  <!-- PMMA Plant Flow Diagram -->
+  <section id="plant-flow" class="section">
+    <h2>PMMA Production Plant Flow Diagram</h2>
+    <svg width="90%" height="120">
+      <rect x="10" y="40" width="120" height="40" fill="#95cbee"/><text x="20" y="65" font-size="15">Raw Materials</text>
+      <polygon points="130,60 150,60 150,80 170,60" fill="#bdb76b"/>
+      <rect x="170" y="40" width="100" height="40" fill="#ecb979"/><text x="180" y="65" font-size="15">Reactor</text>
+      <polygon points="270,60 290,60 290,80 310,60" fill="#bdb76b"/>
+      <rect x="310" y="40" width="120" height="40" fill="#e0ccbe"/><text x="320" y="65" font-size="15">Processing</text>
+      <polygon points="430,60 450,60 450,80 470,60" fill="#bdb76b"/>
+      <rect x="470" y="40" width="120" height="40" fill="#cbeebc"/><text x="485" y="65" font-size="15">Final Product</text>
+    </svg>
+  </section>
+
+  <!-- Production of PMMA in India -->
+  <section id="india" class="section">
+    <h2>PMMA Production in India</h2>
+    <ul>
+      <li><b>Major Manufacturers:</b> LG Chem, Mitsubishi Chemical, Lucite International, Sumitomo Chemical</li>
+      <li><b>Uses:</b> Auto glazing, LED lights, signage, medical devices</li>
+      <li><b>Market Growth:</b> Rapid expansion in electronics and automotive sectors</li>
+    </ul>
+  </section>
+
+  <!-- Interactive Stress-Strain Curve -->
+  <section id="stress-strain" class="section">
+    <h2>Interactive Stress-Strain Curve</h2>
+    <div>
+      <canvas id="stressStrainChart" width="400" height="240"></canvas>
+      <label>
+        Select Strain: <input type="range" id="strain-slider" min="0" max="10" step="0.1" value="0">
+        <span id="strain-value">0</span>%
+      </label>
+    </div>
+  </section>
+
+  <!-- Living Hinge / FEA Analysis -->
+  <section id="living-hinge" class="section">
+    <h2>The Living Hinge — FEA Stress Analysis</h2>
+    <div class="section-grid">
+      <div>
+        <p>
+          The "living hinge" demonstrates the flexibility of some polymers. Finite Element Analysis (FEA) shows stress concentration on the hinge curve, as color-coded below.
+        </p>
+      </div>
+      <div style="text-align:center">
+        <img src="https://i.imgur.com/OQ7MPw8.png" alt="FEA Stress Analysis" style="max-width:180px">
+        <small>FEA Simulation—stress increases towards the red zone</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section id="advantages" class="section">
+    <h2>Advantages of PMMA</h2>
+    <div class="section-grid">
+      <div class="card"><h3>Transparency</h3><p>Excellent light transmission</p></div>
+      <div class="card"><h3>Weather Resistance</h3><p>High UV & weather stability</p></div>
+      <div class="card"><h3>Lightweight</h3><p>Half the weight of glass</p></div>
+      <div class="card"><h3>Electrical Insulation</h3><p>Superior dielectric properties</p></div>
+    </div>
+  </section>
+
+  <!-- Limitations -->
+  <section id="limitations" class="section">
+    <h2>Limitations / Disadvantages</h2>
+    <div class="section-grid">
+      <div class="card"><h3>Brittleness</h3><p>Can crack under force</p></div>
+      <div class="card"><h3>Lower Impact Resistance</h3><p>Compared to polycarbonate</p></div>
+      <div class="card"><h3>Scratch Sensitivity</h3><p>Scratches more easily than glass</p></div>
+    </div>
+  </section>
+
+  <!-- Comparison with Other Polymers -->
+  <section id="comparisons" class="section">
+    <h2>Comparison with Other Polymers</h2>
+    <div class="section-grid">
+      <div class="card">
+        <h3>PMMA vs Polycarbonate</h3>
+        <ul>
+          <li>PC higher impact strength</li>
+          <li>PMMA better UV & scratch resistance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>PMMA vs Polystyrene</h3>
+        <ul>
+          <li>PS is cheaper, but less strong</li>
+          <li>PMMA much better optical clarity & weatherability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications (with cards) -->
+  <section id="apps" class="section">
+    <h2>Applications</h2>
+    <div class="application-cards">
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/3b5998/acrylic--glass.png" alt="Acrylic Glass Icon"/>
+        <span>Acrylic Glass</span>
+      </div>
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/388e3c/reading-glasses.png" alt="Lenses Icon"/>
+        <span>Optical Lenses</span>
+      </div>
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/fbc02d/headlights.png" alt="Automobile Lights Icon"/>
+        <span>Auto Lights</span>
+      </div>
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/ab47bc/medical-doctor.png" alt="Medical Implants Icon"/>
+        <span>Medical Implants</span>
+      </div>
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/1976d2/monitor.png" alt="Displays Icon"/>
+        <span>Displays & Screens</span>
+      </div>
+      <div class="application-card">
+        <img src="https://img.icons8.com/ios-filled/50/6d4c41/construction.png" alt="Construction Icon"/>
+        <span>Construction Materials</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PMMA Circular Economy -->
+  <section id="circular" class="section">
+    <h2>PMMA Circular Economy Flow</h2>
+    <svg width="90%" height="80">
+      <rect x="30" y="30" width="80" height="30" fill="#ffe082"/>
+      <text x="40" y="50" font-size="14">Manufacturing</text>
+      <rect x="140" y="30" width="80" height="30" fill="#b2ebf2"/>
+      <text x="150" y="50" font-size="14">Usage</text>
+      <rect x="250" y="30" width="80" height="30" fill="#b8e986"/>
+      <text x="260" y="50" font-size="14">Recycling</text>
+      <polygon points="110,45 140,45 125,70" fill="#90caf9"/>
+      <polygon points="220,45 250,45 235,70" fill="#90caf9"/>
+      <polygon points="330,45 30,45 180,5" fill="rgba(255,193,7,0.1)"/>
+    </svg>
+    <p style="font-size:0.9em;">The PMMA cycle: manufacturing → use → recycling</p>
+  </section>
+
+  <!-- Chemical Recycling -->
+  <section id="chemical-recycle" class="section">
+    <h2>Chemical Recycling</h2>
+    <p>PMMA can be chemically depolymerized to recover the MMA monomer, enabling closed-loop recycling and sustainability improvements.</p>
+  </section>
+
+  <!-- Bio-based PMMA Alternatives -->
+  <section id="bio-based" class="section">
+    <h2>Bio-based PMMA Alternatives</h2>
+    <p>
+      Recent advances explore renewable feedstocks (e.g., plant-derived sugars) to synthesize MMA, reducing dependence on petrochemicals and lowering carbon footprint.
+    </p>
+  </section>
+
+  <!-- Environmental Impact -->
+  <section id="env" class="section">
+    <h2>Environmental Impact</h2>
+    <ul>
+      <li>PMMA is recyclable via depolymerization.</li>
+      <li>Sustainability remains a challenge—PET is more widely recycled at present.</li>
+    </ul>
+  </section>
+
+  <!-- Future Developments -->
+  <section id="future" class="section">
+    <h2>Future Developments</h2>
+    <ul>
+      <li>Advanced PMMA for biomedical & display tech</li>
+      <li>Recyclable & bio-derived acrylics</li>
+      <li>Hybrid optoelectronic applications</li>
+    </ul>
+  </section>
+
+  <!-- References -->
+  <section id="references" class="section">
+    <h2>References</h2>
+    <ol>
+      <li>R.G. Jones, Polymer Data Handbook, Oxford Univ. Press</li>
+      <li>F. Rodriguez, "Principles of Polymer Systems"</li>
+      <li>P.J. Flory, "Principles of Polymer Chemistry"</li>
+      <li>Recent academic review articles (J. Appl. Polym. Sci.)</li>
+      <li>Company datasheets (Evonik, Mitsubishi Chemical, etc.)</li>
+    </ol>
+    <p>Icons from <a href="https://icons8.com/">Icons8</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 PMMA Educational Project &ndash; Chemistry & Chemical Engineering</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
